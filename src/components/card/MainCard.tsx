@@ -1,12 +1,21 @@
 import styled from "styled-components";
 import React from "react";
+import { MainPhoto } from "../image/MainPhoto";
 
 export function MainCard () {
   return (
-    <StyledMainCard>
-      ,..m
-    </StyledMainCard>
-  );
+		<StyledMainCard>
+			<MainPhoto />
+			<img src='' alt='' />
+			<p>I’m Alireza Kavousy nezjad</p>
+			<p>
+				Draft is a revolutionary mobile app built to help you manage your
+				business easily and save your money.
+			</p>
+			<button>See Project</button>
+			<button>Download Resume</button>
+		</StyledMainCard>
+	)
 }
 
 const StyledMainCard = styled.article`
@@ -16,10 +25,6 @@ const StyledMainCard = styled.article`
 	margin: 188px auto 251px;
 	border-radius: 70px 5px;
 	border: 2px solid rgba(71, 71, 71, 0.3);
-	background-color: linear-gradient(
-		147deg,
-		rgba(57, 57, 57, 0.5) -6.76%,
-		rgba(0, 66, 255, 0.05) 102.96%
-	);
+	background-color: blue;
 	backdrop-filter: blur(10px);
 `
