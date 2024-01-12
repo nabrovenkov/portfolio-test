@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Logo } from "../../components/logo/Logo"
 import { Menu } from "../../components/menu/Menu"
 import { MainCard } from "../../components/card/MainCard"
+import { SkillsIcons } from "../../components/skills-icons/SkillsIcons"
 
 export function Header () {
   return (
@@ -10,6 +11,7 @@ export function Header () {
       <Logo />
       <Menu />
       <MainCard />
+      <SkillsIcons />
     </StyledHeader>
 
   )
