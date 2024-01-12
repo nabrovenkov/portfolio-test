@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import { MainPhoto } from "../image/MainPhoto";
+import { MainPhoto } from "../../components/image/MainPhoto";
 
 export function MainCard () {
   return (

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Logo } from "../../components/logo/Logo"
 import { Menu } from "../../components/menu/Menu"
-import { MainCard } from "../../components/card/MainCard"
+import { MainCard } from "../main/Main"
 import { SkillsIcons } from "../../components/skills-icons/SkillsIcons"
 
 export function Header () {
@@ -10,7 +10,6 @@ export function Header () {
     <StyledHeader>
       <Logo />
       <Menu />
-      <MainCard />
       <SkillsIcons />
     </StyledHeader>
 
