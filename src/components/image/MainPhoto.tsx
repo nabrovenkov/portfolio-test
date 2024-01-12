@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import imageMain from '../../assets/image/image-main.png'
+import imageMain from '../../assets/image/photo/image-main.webp'
 export function MainPhoto () {
   return (
     <StyledMainPhoto src={imageMain} alt="Main Photo" />

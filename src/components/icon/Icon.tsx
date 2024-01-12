@@ -1,4 +1,4 @@
-import mainIcon from '../../assets/image/main-logo.png'
+import mainIcon from '../../assets/image/style-icons/main-logo.png'
 import React from 'react'
 
 type IconPropsType = {

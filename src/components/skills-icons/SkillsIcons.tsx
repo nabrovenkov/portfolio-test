@@ -1,9 +1,9 @@
 import { styled } from "styled-components";
 import { SkillIcon } from "./SkillIcon";
-import psIcon from '../../assets/image/SkillsIcons/ps-icon.png'
-import aeIcon from '../../assets/image/SkillsIcons/ae-icon.png'
-import aiIcon from '../../assets/image/SkillsIcons/ai-icon.png'
-import figmaIcon from '../../assets/image/SkillsIcons/figma-icon.png'
+import psIcon from '../../assets/image/skills-icons/ps-icon.png'
+import aeIcon from '../../assets/image/skills-icons/ae-icon.png'
+import aiIcon from '../../assets/image/skills-icons/ai-icon.png'
+import figmaIcon from '../../assets/image/skills-icons/figma-icon.png'
 
 
 export function SkillsIcons () {
