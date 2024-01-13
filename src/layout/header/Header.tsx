@@ -4,11 +4,13 @@ import { Logo } from "../../components/logo/Logo"
 import { Menu } from "../../components/menu/Menu"
 import { SkillsIcons } from "../../components/skills-icons/SkillsIcons"
 
+const itemsArr = ["Home", "Project", "About", "Content"];
+
 export function Header () {
   return (
     <StyledHeader>
       <Logo />
-      <Menu />
+      <Menu itemsMenuArr={itemsArr}/>
     </StyledHeader>
 
   )
