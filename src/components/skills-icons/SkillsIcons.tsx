@@ -9,10 +9,10 @@ import figmaIcon from '../../assets/image/skills-icons/figma-icon.png'
 export function SkillsIcons () {
   return (
     <StyledSkillsIcons>
-      <SkillIcon iconId={psIcon} value="Photoshop"/>
-      <SkillIcon iconId={aeIcon} value="After Effect" />
-      <SkillIcon iconId={aiIcon} value="Illustrator" />
-      <SkillIcon iconId={figmaIcon} value="Figma" />
+      <SkillIcon iconId={psIcon} title="Photoshop"/>
+      <SkillIcon iconId={aeIcon} title="After Effect" />
+      <SkillIcon iconId={aiIcon} title="Illustrator" />
+      <SkillIcon iconId={figmaIcon} title="Figma" />
     </StyledSkillsIcons>
   )
 }

@@ -2,13 +2,13 @@ import styled from 'styled-components'
 
 type SkillIconPropsType = {
   iconId?: string
-  value?: string
+  title?: string
 }
 export function SkillIcon (props: SkillIconPropsType) {
   return (
     <>
       <img src={props.iconId} alt="" />
-      <SkillBack>{props.value}</SkillBack>
+      <SkillBack>{props.title}</SkillBack>
     </>
   )
 }
