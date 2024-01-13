@@ -21,8 +21,9 @@ export function ProjectCard (props: ProjectCardPropsType) {
 
 const StyledProjectCard = styled.div`
   
-  /* max-width: 270px;
-  max-height: 391px; */
+  max-width: 270px;
+  max-height: 391px;
+  width: 23%;
 `
 const Image = styled.img`
 	object-fit: cover;

@@ -4,7 +4,7 @@ import { SectionTitle } from "../../../components/SectionTitle";
 import { ProjectCard } from "../../../components/card/ProjectCard";
 import projectImage1 from "../../../assets/image/project-image/image1-project.jpg"
 import projectImage2 from "../../../assets/image/project-image/image2-project.jpg"
-import projectImage3 from "../../../assets/image/project-image/image3-project.jpg"
+import projectImage3 from "../../../assets/image/project-image/image3-project.jpeg"
 import projectImage4 from "../../../assets/image/project-image/image4-project.jpg"
 import { FlexWrapper } from "../../../components/FlexWrapper";
 
@@ -32,8 +32,9 @@ export function Projects () {
 }
 
 const StyledProject = styled.section`
-
+  background-color: #222;
 `
 const ProjectsCards = styled.div`
-  
+  display: flex;
+  flex-wrap: wrap;
 `
