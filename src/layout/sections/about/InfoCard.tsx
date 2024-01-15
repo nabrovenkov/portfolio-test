@@ -13,7 +13,9 @@ export function InfoCard () {
 }
 
 const StyledInfoCard = styled.div`
-  
+  background-color: #1153cc8b;
+	max-width: 563px;
+	min-height: 491px;
 `
 const Title = styled.h3`
   
