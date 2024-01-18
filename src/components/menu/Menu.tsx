@@ -19,6 +19,7 @@ export function Menu (props: {itemsMenuArr: Array<string>}) {
 const StyledMenu = styled.nav`
   max-width: 400px;
   padding: 4px;
+  margin-right: 34px;
   ul {
     display: flex;
     gap: 58px;
