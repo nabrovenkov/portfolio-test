@@ -20,4 +20,8 @@ export function SkillsIcons () {
 const StyledSkillsIcons = styled.div`
   display: flex;
   gap: 13px;
+
+  margin-top: 775px;
+  margin-left: 500px;
+  padding-bottom: 80px;
 `

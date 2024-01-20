@@ -9,5 +9,12 @@ export function MainPhoto () {
 
 const StyledMainPhoto = styled.img`
   width: 400px;
-  height: 400px
+  height: 400px;
+  border-radius: 334px;
+  border: 25px solid #FFF;
+  background: lightgray 50% / cover no-repeat, #24335C;
+  margin-top: 43px;
+  margin-left: 105px;
+  margin-right: 75px;
+
 `

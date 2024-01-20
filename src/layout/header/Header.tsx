@@ -29,13 +29,7 @@ export function Header () {
 }
 
 const StyledHeader = styled.header`
-	min-height: 946px;
-	/* background-color: ${theme.color.primary}; */
-	background-image: linear-gradient(
-    to right,
-    ${theme.color.secondary} 32%,
-    ${theme.color.primary} 0);
-	padding-top: 33px;
+
 `
 
 const Moon = styled.button`
@@ -44,7 +38,7 @@ const Moon = styled.button`
   height: 70px;
   img {
 
-    /* position: absolute; */
+    position: relative;
   }
 
 `

@@ -2,29 +2,69 @@ import styled from "styled-components";
 import React from "react";
 import { MainPhoto } from "../../../components/image/MainPhoto";
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { TitleName } from "../../../components/TitleName";
+import { Button } from "../../../components/Button";
+import { Container } from "../../../components/Container";
+import { Link } from "../../../components/icon/Link";
 
 export function Main () {
   return (
-		<FlexWrapper justify={'space-around'}>
-			<StyledMain>
+		<StyledMain>
+			<FlexWrapper  wrap='wrap'>
 				<MainPhoto />
-				<span>I’m Alireza Kavousy nezjad</span>
-				<h1>
-					Draft is a revolutionary mobile app built to help you manage your
-					business easily and save your money.
-				</h1>
-				<button>See Project</button>
-				<button>Download Resume</button>
-			</StyledMain>
-		</FlexWrapper>
+				<Wrapper>
+					<TitleName />
+					<Description>
+						Draft is a revolutionary mobile app built to help you manage your
+						business easily and save your money.
+					</Description>
+					<div>
+						<Button>See Project
+							<Link iconId="buttonArrow"/>
+						</Button>
+						<Button>Download Resume</Button>
+					</div>
+				</Wrapper>
+			</FlexWrapper>
+		</StyledMain>
 	)
 }
 
-const StyledMain = styled.article`
-	width: 80%;
-	margin: 188px auto 251px;
-	border-radius: 70px 5px;
+const StyledMain = styled.main`
+	margin-top: 188px;
+	max-width: 1158px;
+	max-height: 507px; 
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+
+	border-radius: 200px 0px;
 	border: 2px solid rgba(71, 71, 71, 0.3);
-	background-color: blue;
+	background-color: linear-gradient(
+		147deg,
+		rgba(57, 57, 57, 0.5) -6.76%,
+		rgba(0, 66, 255, 0.05) 102.96%
+	);
 	backdrop-filter: blur(10px);
+
+	position: absolute;
+	top: 188px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+`
+const Wrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+`
+const Description = styled.h1`
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 150%;
+	width: 375px;
+
+	margin-top: 20px;
+	margin-bottom: 42px;
 `
