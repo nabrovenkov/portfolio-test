@@ -18,8 +18,9 @@ export function Main () {
 						business easily and save your money.
 					</Description>
 					<div>
-						<Button>See Project
+						<Button>
 							<ArrowWrapper>
+								See Project
 								<IconSvg iconId="buttonArrow"/>
 							</ArrowWrapper>
 						</Button>
@@ -71,6 +72,8 @@ const Description = styled.h1`
 `
 
 const Link = styled.a`
+	margin-left: 32px;
+
 	color: #6c92ff;
 	font-size: 16px;
 	font-style: normal;
@@ -78,8 +81,13 @@ const Link = styled.a`
 	line-height: 150%; /* 24px */
 `
 const ArrowWrapper = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 36px;
 	/* position: absolute; */
-	
+/* 	
 	top: 25%;
-	right: 37px;
+	right: 37px; */
+	
 `

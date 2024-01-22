@@ -8,7 +8,6 @@ export const Button = styled.button`
 	border-radius: 20px;
 	background-color: #2157f2;
 
-  /* display: flex; */
 
   margin: auto 0;
 
@@ -17,7 +16,6 @@ export const Button = styled.button`
 	font-weight: 600;
 	line-height: 150%; /* 22.5px */
 
-	display:  flex;
 
 	/* position: relative; */
 

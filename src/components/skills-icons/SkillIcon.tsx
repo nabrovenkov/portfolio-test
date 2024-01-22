@@ -6,13 +6,13 @@ type SkillIconPropsType = {
 }
 export function SkillIcon (props: SkillIconPropsType) {
   return (
-    <>
-      <SkillBack>
-        <Icon src={props.iconId} alt="" />
-        {props.title}
-      </SkillBack>
-    </>
-  )
+		<>
+			<SkillBack>
+				<Icon src={props.iconId} alt='' />
+				<NameSkill>{props.title}</NameSkill>
+			</SkillBack>
+		</>
+	)
 }
 
 const SkillBack = styled.div`
@@ -36,4 +36,8 @@ const Icon = styled.img`
   position: absolute;
   bottom: 60px;
   left: 25%;
+`
+
+const NameSkill = styled.div`
+  padding: 0 0;
 `
