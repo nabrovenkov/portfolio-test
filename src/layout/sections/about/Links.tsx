@@ -1,14 +1,12 @@
 import styled from "styled-components"
-import linkIcon from '../../../assets/image/icons-sprite.svg'
-import { Link } from "../../../components/icon/Link"
-import { FlexWrapper } from "../../../components/FlexWrapper"
+import { IconSvg } from "../../../components/icon/IconSvg"
 
 export function Links () {
   return (
     <StyledLinks>
-      <Link iconId={"vector"} />
-      <Link iconId={"wa"}/>
-      <Link iconId={"ins"}/>
+      <IconSvg iconId={"vector"} />
+      <IconSvg iconId={"wa"}/>
+      <IconSvg iconId={"ins"}/>
     </StyledLinks> 
   )
 }

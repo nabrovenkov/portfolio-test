@@ -17,7 +17,11 @@ export const Button = styled.button`
 	font-weight: 600;
 	line-height: 150%; /* 22.5px */
 
-	& + & {
-		margin-left: 32px;
-	}
+	display:  flex;
+
+	/* position: relative; */
+
+	
 `
+
+

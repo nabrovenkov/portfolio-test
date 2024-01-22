@@ -4,8 +4,7 @@ import { MainPhoto } from "../../../components/image/MainPhoto";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { TitleName } from "../../../components/TitleName";
 import { Button } from "../../../components/Button";
-import { Container } from "../../../components/Container";
-import { Link } from "../../../components/icon/Link";
+import { IconSvg } from "../../../components/icon/IconSvg";
 
 export function Main () {
   return (
@@ -20,9 +19,11 @@ export function Main () {
 					</Description>
 					<div>
 						<Button>See Project
-							<Link iconId="buttonArrow"/>
+							<ArrowWrapper>
+								<IconSvg iconId="buttonArrow"/>
+							</ArrowWrapper>
 						</Button>
-						<Button>Download Resume</Button>
+						<Link>Download Resume</Link>
 					</div>
 				</Wrapper>
 			</FlexWrapper>
@@ -67,4 +68,18 @@ const Description = styled.h1`
 
 	margin-top: 20px;
 	margin-bottom: 42px;
+`
+
+const Link = styled.a`
+	color: #6c92ff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%; /* 24px */
+`
+const ArrowWrapper = styled.div`
+	/* position: absolute; */
+	
+	top: 25%;
+	right: 37px;
 `
