@@ -39,5 +39,6 @@ const Icon = styled.img`
 `
 
 const NameSkill = styled.div`
-  padding: 0 0;
+  text-align: center;
+	margin-top: 43px;
 `

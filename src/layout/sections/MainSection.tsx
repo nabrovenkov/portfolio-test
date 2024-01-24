@@ -22,4 +22,6 @@ const MainSectionStyled = styled.section`
 		${theme.color.primary} 0
 	);
 	padding-top: 33px;
+
+	position: relative;
 `

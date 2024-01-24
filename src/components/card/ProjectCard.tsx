@@ -10,26 +10,79 @@ export function ProjectCard (props: ProjectCardPropsType) {
   return (
 		<StyledProjectCard>
 			<Image src={props.image} />
-			<FlexWrapper>
-				<Text>{props.text}</Text>
-				<Button>Edit for you</Button>
-				<Button>See preview</Button>
-			</FlexWrapper>
+			<Description>
+				<Wrapper>
+					<Text>{props.text}</Text>
+					<CardButton>Edit for you</CardButton>
+					<LinkCard>See preview</LinkCard>
+				</Wrapper>
+			</Description>
 		</StyledProjectCard>
 	)
 }
 
 const StyledProjectCard = styled.div`
-  
-  max-width: 270px;
-  max-height: 391px;
-  width: 23%;
+	display: flex;
+	width: 270px;
+	border: 3px solid red;
+	position: relative;
+
+	&:hover {
+		& > Description {
+			background-color: #24335c;
+		}
+	}
+`
+
+const Description = styled.div`
+	width: 100%;	
+	height: 155px;
+	border-radius: 0px 0px 26px 26px;
+	background-color: #353535;
+	position: absolute;
+	bottom: 0;
+`
+const Wrapper = styled.div`
+	padding: 17px 33px 23px;
+	height: 100%;
 `
 const Image = styled.img`
+	border-radius: 26px;
 	object-fit: cover;
-	max-width: 270px;
-	max-height: 391px;
+	width: 100%;
+	height: 395px;
 `
+
 const Text = styled.p`
-  
+	/* display: block; */
+	/* height: 100%; */
+	margin-bottom: 25px;
+
+	color: #fff;
+	font-family: Kalameh;
+	font-size: 20px;
+	font-weight: 700;
+`
+
+export const CardButton = styled.button`
+	width: 100px;
+	height: 29px;
+	border-radius: 12px;
+	background-color: #fff;
+
+	&:hover {
+		background-color: #2157f2;
+		color: #fff;
+	}
+`
+
+const LinkCard = styled.a`
+	margin-left: 21px;
+	color: #a6bcfa;
+	font-size: 14px;
+	line-height: 148%; /* 20.72px */
+
+	&:hover {
+		color: #fff;
+	}
 `

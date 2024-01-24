@@ -21,7 +21,11 @@ const StyledSkillsIcons = styled.div`
   display: flex;
   gap: 13px;
 
-  margin-top: 775px;
+  /* margin-top: 775px;
   margin-left: 500px;
-  padding-bottom: 80px;
+  padding-bottom: 80px; */
+
+  position: absolute;
+  top: 743px;
+  left: 530px;
 `
