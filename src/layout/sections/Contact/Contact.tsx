@@ -13,20 +13,24 @@ export function Contact () {
 			<Container>
 				<SectionTitle>Contact Us</SectionTitle>
 				<ContactForm>
-					<NameForm>Get in touch</NameForm>
-					<Field placeholder='E-mail' />
-					<Field placeholder='Phone' />
-					<Field className='textArea' placeholder='Message' as={'textarea'} />
-					<ContactInfo>
-						<ContactIcon image={location} name='Location' data='Mashhad/Iran' />
-						<ContactIcon image={phone} name='Phone' data='+989150063913' />
-						<ContactIcon
-							image={email}
-							name='Email'
-							data='arkn3913@gmail.com'
-						/>
-					</ContactInfo>
-					<ContactButton>Send</ContactButton>
+          <NameForm>Get in touch</NameForm>
+          <FlexWrapper direction="row" wrap="wrap" justify="flex-start">
+            <div>
+              <Field placeholder='Phone' />
+              <Field placeholder='E-mail' />
+            </div>
+            <Field className='textArea' placeholder='Message' as={'textarea'} />
+            <ContactInfo>
+              <ContactIcon image={location} name='Location' data='Mashhad/Iran' />
+              <ContactIcon image={phone} name='Phone' data='+989150063913' />
+              <ContactIcon
+                image={email}
+                name='Email'
+                data='arkn3913@gmail.com'
+              />
+            </ContactInfo>
+            <ContactButton>Send</ContactButton>
+          </FlexWrapper>
 				</ContactForm>
 			</Container>
 		</ContactStyled>
@@ -47,17 +51,19 @@ const ContactForm = styled.form`
 `
 const NameForm = styled.h3`
 	color: #fff;
-	text-align: center;
 	font-size: 36px;
 	font-weight: 500;
 	line-height: 48.96px;
 `
+
 const Field = styled.input`
 	width: 211px;
 	height: 36px;
-
 	border-radius: 9px;
 	background-color: #393838;
+  &:nth-child(2) {
+    background-color: red;
+  }
 
   &.textArea {
     max-width: 430px;
@@ -65,7 +71,6 @@ const Field = styled.input`
     min-height: 152px;
   }
 `
-
 const ContactInfo = styled.div`
 
 `
