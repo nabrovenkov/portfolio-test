@@ -11,19 +11,26 @@ type ContactIconPropsType = {
 
 export function ContactIcon (props: ContactIconPropsType) {
   return (
-		<FlexWrapper justify='space-between'>
-			<ContactImage src={props.image}/>
-      <FlexWrapper direction='column'>
-        <ContactName>{props.name}</ContactName>
-        <ContactData>{props.data}</ContactData>
-      </FlexWrapper>
-		</FlexWrapper>
+		<ContactIconStyled>
+			<FlexWrapper >
+				<ContactImage src={props.image}/>
+				<FlexWrapper align='flex-start' direction='column'>
+					<ContactName>{props.name}</ContactName>
+					<ContactData>{props.data}</ContactData>
+				</FlexWrapper>
+			</FlexWrapper>
+		</ContactIconStyled>
 	)
 }
-
+const ContactIconStyled = styled.div`
+	&:nth-child(2) {
+		margin: 37px 0
+	}
+`
 const ContactImage = styled.img`
 	width: 38px;
 	height: 38px;
+	margin-right: 23px;
 `
 
 const ContactName = styled.span`

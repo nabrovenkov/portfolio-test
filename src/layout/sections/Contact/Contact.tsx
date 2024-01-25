@@ -21,8 +21,14 @@ export function Contact () {
             </div>
             <Field className='textArea' placeholder='Message' as={'textarea'} />
             <ContactInfo>
-              <ContactIcon image={location} name='Location' data='Mashhad/Iran' />
-              <ContactIcon image={phone} name='Phone' data='+989150063913' />
+              <ContactIcon 
+                image={location} 
+                name='Location' 
+                data='Mashhad/Iran' />
+              <ContactIcon 
+                image={phone} 
+                name='Phone' 
+                data='+989150063913' />
               <ContactIcon
                 image={email}
                 name='Email'
@@ -54,6 +60,7 @@ const NameForm = styled.h3`
 	font-size: 36px;
 	font-weight: 500;
 	line-height: 48.96px;
+  padding: 53px 0 23px;
 `
 
 const Field = styled.input`
@@ -61,19 +68,26 @@ const Field = styled.input`
 	height: 36px;
 	border-radius: 9px;
 	background-color: #393838;
-  &:nth-child(2) {
-    background-color: red;
+
+  &:first-child {
+    margin-right: 7px
   }
 
   &.textArea {
     max-width: 430px;
     width: 100%;
     min-height: 152px;
+    margin: 23px 0 37px;
   }
 `
 const ContactInfo = styled.div`
+	margin: 0 100px 0 130px;
 
+  position: relative;
+  top: -45px;
+	
 `
+
 
 const ContactButton = styled.button`
 	width: 117px;
@@ -81,4 +95,10 @@ const ContactButton = styled.button`
 
 	border-radius: 9px;
 	background-color: #2350d6;
+
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 21.76px;
 `
