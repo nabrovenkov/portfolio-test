@@ -29,10 +29,27 @@ const StyledProjectMenu = styled.nav`
 `
 
 const ProjectButton = styled.div`
-	max-width: 160px;
+	width: 160px;
 	height: 42px;
 
 	border-radius: 67px;
 	border: 3px solid #4c546c;
-	background-color: #222;
+
+	position: relative;
+
+	& > a {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		color: #fff;
+		font-size: 20px;
+		line-height: 136%; /* 27.2px */
+	}
+
+	&:hover {
+		background-color: #24335c;
+		border-color: #24335c;
+	}
 `

@@ -20,13 +20,13 @@ export function Projects () {
           <ProjectMenu itemsMenuArr={itemsArr}/>
           <ProjectsCards>
             <ProjectCard image={projectImage1} text={"Story motion for sale English courses"}/>
-            {/* <ProjectCard image={projectImage2} text={"Story motion for sale English courses"}/>
+            <ProjectCard image={projectImage2} text={"Story motion for sale English courses"}/>
             <ProjectCard image={projectImage3} text={"Story motion for sale English courses"}/>
             <ProjectCard image={projectImage4} text={"Story motion for sale English courses"}/>
             <ProjectCard image={projectImage1} text={"Story motion for sale English courses"}/>
             <ProjectCard image={projectImage2} text={"Story motion for sale English courses"}/>
             <ProjectCard image={projectImage3} text={"Story motion for sale English courses"}/>
-            <ProjectCard image={projectImage4} text={"Story motion for sale English courses"}/> */}
+            <ProjectCard image={projectImage4} text={"Story motion for sale English courses"}/>
           </ProjectsCards>
         </FlexWrapper>
       </Container>
@@ -40,4 +40,8 @@ const StyledProject = styled.section`
 const ProjectsCards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px 30px;
+  margin: 55px 0 152px;
+  /* justify-content: space-around; */
 `

@@ -21,19 +21,6 @@ export function ProjectCard (props: ProjectCardPropsType) {
 	)
 }
 
-const StyledProjectCard = styled.div`
-	display: flex;
-	width: 270px;
-	border: 3px solid red;
-	position: relative;
-
-	&:hover {
-		& > Description {
-			background-color: #24335c;
-		}
-	}
-`
-
 const Description = styled.div`
 	width: 100%;	
 	height: 155px;
@@ -42,6 +29,20 @@ const Description = styled.div`
 	position: absolute;
 	bottom: 0;
 `
+
+const StyledProjectCard = styled.div`
+	display: flex;
+	width: 270px;
+	position: relative;
+
+	&:hover {
+		& ${Description} {
+			background-color: #24335c;
+		}
+	}
+`
+
+
 const Wrapper = styled.div`
 	padding: 17px 33px 23px;
 	height: 100%;

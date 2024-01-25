@@ -1,15 +1,19 @@
 import styled from "styled-components"
 
-export function TitleName () {
+type TitleNamePropsType = {
+	col?: string
+}
+
+export function TitleName (props: TitleNamePropsType) {
   return (
-		<TitleNameStyled>
+		<TitleNameStyled >
 			I’m <NameStyled>Alireza</NameStyled><br/> Kavousy nezjad
 		</TitleNameStyled>
 	)
 }
 
-const TitleNameStyled = styled.h2`
-	color: #fff;
+const TitleNameStyled = styled.h2<TitleNamePropsType>`
+	color: ${props => props.col || '#fff'};
 	font-family: Roboto;
 	font-size: 60px;
 	font-style: normal;
