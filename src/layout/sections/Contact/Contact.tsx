@@ -67,18 +67,31 @@ const Field = styled.input`
 	width: 211px;
 	height: 36px;
 	border-radius: 9px;
+	border: none;
 	background-color: #393838;
 
-  &:first-child {
-    margin-right: 7px
-  }
+	&:first-child {
+		margin-right: 7px;
+	}
 
-  &.textArea {
-    max-width: 430px;
-    width: 100%;
-    min-height: 152px;
-    margin: 23px 0 37px;
-  }
+	&::placeholder {
+		color: #a5a5a5;
+		font-size: 13px;
+		line-height: 136%; /* 17.68px */
+		padding-left: 30px;
+	}
+
+	&.textArea {
+		max-width: 430px;
+		width: 100%;
+		min-height: 152px;
+		margin: 23px 0 37px;
+
+		&::placeholder {
+			padding-top: 17px;
+      font-family: 'Roboto'
+		}
+	}
 `
 const ContactInfo = styled.div`
 	margin: 0 100px 0 130px;
@@ -95,6 +108,7 @@ const ContactButton = styled.button`
 
 	border-radius: 9px;
 	background-color: #2350d6;
+  margin-bottom: 45px;
 
 	color: #fff;
 	text-align: center;
